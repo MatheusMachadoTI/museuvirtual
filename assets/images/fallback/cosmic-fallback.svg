@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Visualização astronômica alternativa">
+<defs>
+ <radialGradient id="bg"><stop stop-color="#18294a"/><stop offset=".45" stop-color="#080e1c"/><stop offset="1" stop-color="#02040a"/></radialGradient>
+ <radialGradient id="neb"><stop stop-color="#b6a6ff" stop-opacity=".7"/><stop offset=".35" stop-color="#537cff" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="35"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<ellipse cx="1050" cy="430" rx="560" ry="260" fill="url(#neb)" filter="url(#blur)"/>
+<g fill="#fff" opacity=".8">
+ <circle cx="120" cy="120" r="2"/><circle cx="240" cy="700" r="2"/><circle cx="430" cy="180" r="3"/><circle cx="580" cy="760" r="2"/>
+ <circle cx="760" cy="120" r="2"/><circle cx="920" cy="680" r="2"/><circle cx="1180" cy="160" r="3"/><circle cx="1410" cy="620" r="2"/>
+ <circle cx="1500" cy="220" r="2"/><circle cx="330" cy="470" r="2"/><circle cx="1280" cy="470" r="2"/>
+</g>
+<g fill="none" stroke="#79a9ff" stroke-opacity=".16">
+ <ellipse cx="1000" cy="440" rx="520" ry="170" transform="rotate(-14 1000 440)"/>
+ <ellipse cx="1000" cy="440" rx="390" ry="120" transform="rotate(-14 1000 440)"/>
+</g>
+<text x="80" y="820" fill="#9db5d8" font-family="Arial,sans-serif" font-size="28" letter-spacing="7">SINAIS DO UNIVERSO · VISUALIZAÇÃO ALTERNATIVA</text>
+</svg>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sinais do Universo — museu digital de astronomia, exploração espacial e visualizações científicas.">
+<meta name="theme-color" content="#03060d">
+<title>Sinais do Universo | Museu Digital de Astronomia</title>
+<link rel="preconnect" href="https://assets.science.nasa.gov">
+<link rel="preconnect" href="https://images-assets.nasa.gov">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+<div class="progress" id="progressLine" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Sinais do Universo — página inicial"><i class="brand-mark"></i>SINAIS DO UNIVERSO</a>
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a><a href="pages/museu.html">Museu</a><a href="pages/universo.html">Universo</a>
+      <a href="pages/sistema-solar.html">Sistema Solar</a><a href="pages/exploracao.html">Exploração</a>
+      <a href="pages/fenomenos.html">Fenômenos</a><a href="pages/laboratorio.html">Laboratório</a><a href="pages/glossario.html">Glossário</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Alternar tema" title="Alternar tema">◐</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+<section class="hero-carousel" id="heroCarousel" aria-roledescription="carrossel" aria-label="Destaques do Universo" tabindex="0">
+  <div class="hero-progress" aria-hidden="true"><span id="heroProgressBar"></span></div>
+  <div class="hero-slides" id="heroSlides"></div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="hero-stars-layer" aria-hidden="true"><canvas id="starfield"></canvas></div>
+
+  <div class="hero-ui">
+    <div class="hero-copy" id="heroCopy"></div>
+    <div class="hero-bottom">
+      <div class="hero-counter" id="heroCounter" aria-live="polite"></div>
+      <div class="hero-controls">
+        <button class="hero-arrow" id="heroPrev" aria-label="Slide anterior">←</button>
+        <div class="hero-dots" id="heroDots" role="tablist" aria-label="Selecionar destaque"></div>
+        <button class="hero-arrow" id="heroNext" aria-label="Próximo slide">→</button>
+      </div>
+      <div class="hero-credit" id="heroCredit"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section home-intro">
+  <div class="section-head reveal">
+    <span class="eyebrow">UMA JORNADA EM ESCALAS</span>
+    <h2>Explore o Universo como quem percorre um museu.</h2>
+    <p>Do nosso planeta às estruturas mais distantes observadas, cada sala reúne imagens, dados, fenômenos e missões que ajudam a transformar o cosmos em uma experiência compreensível.</p>
+  </div>
+  <div class="explore-grid">
+    <a class="explore-card explore-card-wide reveal" href="pages/sistema-solar.html">
+      <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/o/OSS2-1.jpg?crop=faces%2Cfocalpoint&fit=clip&h=1000&w=1312" alt="Montagem do Sistema Solar" loading="lazy" decoding="async">
+      <span class="explore-overlay"></span><div class="explore-copy"><span class="eyebrow">01 · SISTEMA SOLAR</span><h3>Nosso pequeno canto do cosmos.</h3><p>Planetas, órbitas, luas e dados interativos.</p><span class="explore-link">Explorar →</span></div>
+    </a>
+    <a class="explore-card reveal" href="pages/museu.html">
+      <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2022/07/STScI-01G8H1K2BCNATEZSKVRN9Z69SR.png?crop=faces%2Cfocalpoint&fit=clip&h=1200&w=1200" alt="Campo profundo do telescópio James Webb" loading="lazy" decoding="async">
+      <span class="explore-overlay"></span><div class="explore-copy"><span class="eyebrow">02 · MUSEU</span><h3>Imagens que atravessam o tempo.</h3><p>Um acervo curado de observações e visualizações.</p><span class="explore-link">Entrar no acervo →</span></div>
+    </a>
+    <a class="explore-card reveal" href="pages/fenomenos.html">
+      <img src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001435/GSFC_20171208_Archive_e001435~orig.jpg" alt="Visualização científica de um buraco negro" loading="lazy" decoding="async">
+      <span class="explore-overlay"></span><div class="explore-copy"><span class="eyebrow">03 · FENÔMENOS</span><h3>Quando a física fica extrema.</h3><p>Gravidade, luz, estrelas e espaço-tempo.</p><span class="explore-link">Ver fenômenos →</span></div>
+    </a>
+    <a class="explore-card reveal" href="pages/exploracao.html">
+      <img src="https://images-assets.nasa.gov/image/jwst-rocket/jwst-rocket~orig.jpg" alt="Telescópio James Webb durante o lançamento" loading="lazy" decoding="async">
+      <span class="explore-overlay"></span><div class="explore-copy"><span class="eyebrow">04 · MISSÕES</span><h3>Explorar é ampliar o mapa.</h3><p>Missões que mudaram nossa visão do espaço.</p><span class="explore-link">Ver linha do tempo →</span></div>
+    </a>
+    <a class="explore-card reveal" href="pages/laboratorio.html">
+      <div class="explore-art lab-art" aria-hidden="true"><span>c = 299.792 km/s</span><i></i><b></b></div>
+      <div class="explore-copy"><span class="eyebrow">05 · LABORATÓRIO</span><h3>Transforme números em experiência.</h3><p>Simulações simples para visualizar escalas e gravidade.</p><span class="explore-link">Abrir laboratório →</span></div>
+    </a>
+    <a class="explore-card reveal" href="pages/glossario.html">
+      <div class="explore-art glossary-art" aria-hidden="true"><span>GALÁXIA</span><span>QUASAR</span><span>REDSHIFT</span><span>ÓRBITA</span></div>
+      <div class="explore-copy"><span class="eyebrow">06 · GLOSSÁRIO</span><h3>Entenda a linguagem do cosmos.</h3><p>Conceitos rápidos para acompanhar a exploração.</p><span class="explore-link">Consultar termos →</span></div>
+    </a>
+  </div>
+</section>
+
+<section class="scale-section">
+  <div class="scale-backdrop" aria-hidden="true"></div>
+  <div class="section scale-inner">
+    <div class="section-head reveal"><span class="eyebrow">PERSPECTIVA CÓSMICA</span><h2>Uma escala difícil de imaginar.</h2><p>As distâncias abaixo são apresentadas como referências educativas. A visualização não está em escala absoluta.</p></div>
+    <div class="scale-track">
+      <article class="scale-node reveal"><span class="scale-index">01</span><div class="scale-orb moon-orb"></div><strong>Lua</strong><small>≈ 384 mil km da Terra</small></article>
+      <article class="scale-node reveal"><span class="scale-index">02</span><div class="scale-orb earth-orb"></div><strong>Terra</strong><small>diâmetro ≈ 12.742 km</small></article>
+      <article class="scale-node reveal"><span class="scale-index">03</span><div class="scale-orb sun-orb"></div><strong>Sol</strong><small>diâmetro ≈ 1,39 milhão km</small></article>
+      <article class="scale-node reveal"><span class="scale-index">04</span><div class="scale-orb system-orb"></div><strong>Sistema Solar</strong><small>bilhões de quilômetros de extensão</small></article>
+      <article class="scale-node reveal"><span class="scale-index">05</span><div class="scale-orb galaxy-orb"></div><strong>Via Láctea</strong><small>≈ 100 mil anos-luz de diâmetro</small></article>
+      <article class="scale-node reveal"><span class="scale-index">06</span><div class="scale-orb universe-orb"></div><strong>Universo observável</strong><small>≈ 93 bilhões de anos-luz de diâmetro</small></article>
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta">
+  <div class="cta-panel reveal">
+    <div><span class="eyebrow">CONTINUE A JORNADA</span><h2>O próximo sinal pode estar a bilhões de anos-luz.</h2><p>Escolha uma sala e continue explorando.</p></div>
+    <div class="hero-actions"><a class="btn primary" href="pages/museu.html">Entrar no Museu →</a><a class="btn" href="pages/sistema-solar.html">Sistema Solar</a></div>
+  </div>
+</section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
